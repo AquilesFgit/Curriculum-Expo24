@@ -1,0 +1,143 @@
+body {
+    background-image: url(./imagenes/simplified-rainbow-design-with-a-streamlined-two-dimensional-and-acidic-element-page-border-background-word-template_1aea640994__1131_1600.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #232529;
+    font-stretch: condensed;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #c9c5c5;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+header .name {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    color: #0077cc;
+}
+
+header .contact-info {
+    text-align: right;
+}
+
+header .contact-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    font-size: 1.6em;
+    color: #0077cc;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.experience,
+.education,
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience .item,
+.education .item {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.experience .item h3,
+.education .item h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.experience .item p,
+.education .item p {
+    font-style: italic;
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills ul li {
+    width: 48%;
+    margin: 5px 1%;
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .experience .item,
+    .education .item {
+        width: 48%;
+        margin-right: 4%;
+    }
+    .experience .item:nth-child(2n),
+    .education .item:nth-child(2n) {
+        margin-right: 0;
+    }
+    .skills ul li {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .name {
+        font-size: 1.8em;
+    }
+    .contact-info {
+        text-align: left;
+    }
+    .experience .item,
+    .education .item {
+        width: 100%;
+    }
+    .skills ul li {
+        width: 48%;
+    }
+}
